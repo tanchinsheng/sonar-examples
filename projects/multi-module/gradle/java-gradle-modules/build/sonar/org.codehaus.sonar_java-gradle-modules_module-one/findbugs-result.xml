@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.0" sequence="0" timestamp="1422883398258" analysisTimestamp="1422883795945" release="">
+  <Project>
+    <Jar>C:\app\Github\sonar-examples\projects\multi-module\gradle\java-gradle-modules\module-one\build\classes\main\One.class</Jar>
+    <AuxClasspathEntry>C:\app\Github\sonar-examples\projects\multi-module\gradle\java-gradle-modules\module-one\build\classes\main</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\app\jdk1.8.0_31\jre\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\app\Github\sonar-examples\projects\multi-module\gradle\java-gradle-modules\build\sonar\org.codehaus.sonar_java-gradle-modules_module-one\findbugs\annotations.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\app\Github\sonar-examples\projects\multi-module\gradle\java-gradle-modules\build\sonar\org.codehaus.sonar_java-gradle-modules_module-one\findbugs\jsr305.jar</AuxClasspathEntry>
+    <SrcDir>C:\app\Github\sonar-examples\projects\multi-module\gradle\java-gradle-modules\module-one\src\main\java</SrcDir>
+  </Project>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" instanceHash="83e97a80789bf3e4777d99bd8576d63" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread public/protected field</ShortMessage>
+    <LongMessage>Unread public/protected field: One.message</LongMessage>
+    <Class classname="One" primary="true">
+      <SourceLine classname="One" start="1" end="6" sourcefile="One.java" sourcepath="One.java" relSourcepath="One.java">
+        <Message>At One.java:[lines 1-6]</Message>
+      </SourceLine>
+      <Message>In class One</Message>
+    </Class>
+    <Field classname="One" name="message" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="One" sourcefile="One.java" sourcepath="One.java" relSourcepath="One.java">
+        <Message>In One.java</Message>
+      </SourceLine>
+      <Message>Field One.message</Message>
+    </Field>
+    <SourceLine classname="One" primary="true" start="3" end="3" startBytecode="7" endBytecode="7" sourcefile="One.java" sourcepath="One.java" relSourcepath="One.java">
+      <Message>At One.java:[line 3]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" abbrev="UrF" category="STYLE">
+    <ShortDescription>Unread public/protected field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never read.&nbsp;
+The field is public or protected, so perhaps
+    it is intended to be used with classes not seen as part of the analysis. If not,
+consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Unread field</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 2 Feb 2015 21:23:18 +0800" total_classes="1" referenced_classes="10" total_bugs="1" total_size="7" num_packages="1" java_version="1.8.0_31" vm_version="25.31-b07" cpu_seconds="3.10" clock_seconds="8.87" peak_mbytes="138.18" alloc_mbytes="247.50" gc_seconds="0.07" priority_2="1">
+    <FileStats path="One.java" bugCount="1" size="7" bugHash="df6a2fddd4eb832882b9b33e4897caa7"/>
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="7" priority_2="1">
+      <ClassStats class="One" sourceFile="One.java" interface="false" size="7" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="2945" invocations="302" avgMicrosecondsPerInvocation="9752" maxMicrosecondsPerInvocation="147030" standardDeviationMircosecondsPerInvocation="17575"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="473" invocations="301" avgMicrosecondsPerInvocation="1572" maxMicrosecondsPerInvocation="213077" standardDeviationMircosecondsPerInvocation="12368"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="186" invocations="10" avgMicrosecondsPerInvocation="18653" maxMicrosecondsPerInvocation="144335" standardDeviationMircosecondsPerInvocation="42281"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
