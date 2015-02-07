@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="example.GreetingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-01-31T15:14:13" hostname="cstan-PC" time="0.004">
-  <properties/>
-  <testcase name="test" classname="example.GreetingTest" time="0.004"/>
-  <system-out><![CDATA[Hello, world.
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

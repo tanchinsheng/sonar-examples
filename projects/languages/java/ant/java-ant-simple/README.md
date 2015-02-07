@@ -12,4 +12,4 @@ Usage
 * Set the sonar.jdbc.* properties in the build.xml file
 * Run the following command:
 
-        ant all
+        C:\app\apache-ant-1.9.4\bin\ant all
